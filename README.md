@@ -4,8 +4,7 @@ A content-based movie recommendation web app built with Python and Streamlit.
 
 **Live app:** https://movierecommender-excfcx9zkzyjyjtsh8g5qq.streamlit.app
 
-<!-- Add a screenshot: save it as screenshot.png in this folder, then uncomment the next line -->
-<!-- ![CineMatch screenshot](screenshot.png) -->
+![CineMatch screenshot](CineMatch%20Screenshot.png)
 
 ## Features
 
@@ -54,6 +53,10 @@ streamlit run app.py
 ## Notes
 
 - Recommendations are based on plot text and genres only, so results can be weak for movies with little unique text.
-- Data source: movie metadata dataset (45k movies); posters and links from TMDB.
+- Data source: [The Movies Dataset on Kaggle](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) (about 45,000 movies). Posters and links come from the TMDB API.
 
 *This product uses the TMDB API but is not endorsed or certified by TMDB.*
+
+## Author
+
+Built by **Rishit Gadia** · [GitHub](https://github.com/gadiarishit)
