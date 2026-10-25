@@ -53,7 +53,7 @@ streamlit run app.py
 ## Notes
 
 - Recommendations are based on plot text and genres only, so results can be weak for movies with little unique text.
-- Data source: [The Movies Dataset on Kaggle](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) (about 45,000 movies). Posters and links come from the TMDB API.
+- Data source: [The Movies Dataset on Kaggle](https://www.kaggle.com/datasets/ihsafy/movies-metadata-csv) (about 45,000 movies). Posters and links come from the TMDB API.
 
 *This product uses the TMDB API but is not endorsed or certified by TMDB.*
 
