@@ -70,7 +70,7 @@ class Recommender:
                     out.append(p)
         return out[:limit]
 
-    def recommend(self, pos, n=15):
+    def recommend(self, pos, n=15, min_sim=0.2):
         """Content-based: cosine similarity on TF-IDF (rows are L2-normalised)."""
         sims = self.matrix[pos].dot(self.matrix.T).toarray().ravel()
         sims[pos] = -1
@@ -80,7 +80,7 @@ class Recommender:
         top = top[np.argsort(-sims[top])]
         res = self.df.iloc[top].copy()
         res["similarity"] = sims[top]
-        return res
+        return res[res["similarity"] >= min_sim]
 
     def search_by_text(self, text, n=15):
         """Fallback: treat the query as a plot description and match it."""
