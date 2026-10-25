@@ -2,6 +2,6 @@ streamlit>=1.40
 pandas
 numpy
 scipy
-scikit-learn==1.6.1
+scikit-learn
 requests
 python-dotenv
